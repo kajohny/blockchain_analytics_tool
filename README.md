@@ -1,5 +1,5 @@
 # PYTHON BLOCKCHAIN ANALYTICS TOOL
-We can show top 100 ethereum accounts and represent them in charts by using this prooject.
+We can show top 100 ethereum accounts and represent them in charts by using this project.
 
 ## Installation
 ```
