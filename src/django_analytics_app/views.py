@@ -25,7 +25,7 @@ def index(request):
     for ch in ["[", "]" ,"'", " "]:
         res_addresses = str(res_addresses).replace(ch, "")
         
-    balances = requests.get("https://api.etherscan.io/api?module=account&action=balancemulti&address=" + res_addresses + "&tag=latest&apikey=AQFDTFJZW2ZYVSWJF7M5KMS83SU6PVYYEJ",
+    balances = requests.get("https://api.etherscan.io/api?module=account&action=balancemulti&address=" + res_addresses + "&tag=latest&apikey=EXAMPLEAPI",
     headers = {"accept": "application/json"})
     for balance in balances.json()['result']:
         res_balances.append(balance['balance'].replace("\n", ","))
